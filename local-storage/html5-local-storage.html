@@ -1,0 +1,39 @@
+<head>
+	<title>HTML5 LS Example</title>
+	<link rel="stylesheet" href="local-storage.css">
+	<script type="text/javascript" src="local-storage.js"></script>
+</head>
+
+<BODY onload="showAll()">
+<h1>TODO List - HTML5 Local Storage Example</h1>
+
+	<form name='tlform'>
+
+		<div id="todo-list">
+			
+
+		<p><b>Priority:</b><input type=text name="priority"></p>
+		<p><b>TODO Item:</b><input type=text name="data"></p>
+
+		<p>
+	    <input type=button value="Save"   onclick="saveItem()"> 
+	    <input type=button value="Modify" onclick="modifyItem()"> 
+	    <input type=button value="Remove" onclick="removeItem()">
+	</p>
+
+		</div>
+
+		<div id="items-table">
+			<h2>TODO List</h2>
+			<table id="list"></table>
+			<p>
+				<label><input type=button value="Clear" onclick="clearAll()">
+					<i>* Removes all items</i></label>
+			</p>
+		</div>
+	</form>
+
+
+</BODY>
+
+
